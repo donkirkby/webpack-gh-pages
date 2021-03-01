@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "static docs",
     "build": "webpack"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/donkirkby/webpack-gh-pages#readme",
   "devDependencies": {
+    "node-static": "^0.7.11",
     "webpack": "^5.24.2",
     "webpack-cli": "^4.5.0"
   },
