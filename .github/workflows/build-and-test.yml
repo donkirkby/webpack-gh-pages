@@ -2,13 +2,13 @@ name: Build and Test
 on: push
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Set up Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          node-version: 12.13
+          node-version: 22.12
       - run: npm install
 
       - run: npm run test:ci
